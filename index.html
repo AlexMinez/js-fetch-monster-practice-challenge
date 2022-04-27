@@ -4,13 +4,22 @@
     <meta charset="utf-8">
     <title>Monstr</title>
     <!-- <script src='js/index.js'></script> -->
-    <script src='js/demo.js'></script>
+    <!-- <script src='js/demo.js'></script> -->
   </head>
   <body>
     <h1>Monstr Inc.</h1>
     <div id='create-monster'></div>
+    <form id="monstersForm" action="http://localhost:3000/monsters">
+      <input type="text" id="name" placeholder="Name">
+      <input type="text" id="age" placeholder="Age">
+      <input type="text" id="description" placeholder="Description">
+      <button id="btn" type="submit">Create!</button>
+    </form>
     <div id='monster-container'></div>
     <button id="back"><=</button>
     <button id="forward">=></button>
+
+
+    <script src='js/index.js'></script>
   </body>
 </html>
